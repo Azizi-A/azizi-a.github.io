@@ -6,26 +6,29 @@ body {
     display: flex;
     flex-direction: row; 
     justify-content: space-between;
+    height: 10%;
 }
 
 .banner-box {
     display: flex; 
     flex-direction: column;
-    flex: 0 1 20%;
+    justify-content: space-evenly;
+    align-items: center;
+    flex: 0 0 23%;
     background-color: linen;
 }
 
 .banner-img {
     max-width: 100%;
-    height: auto; 
-
+    height: auto;
+    max-height: 60px;
 }
 
 h1 {
     color: linen;
 }
 h2 {
-    color: black;
+    color: linen;
 }
 
 p {

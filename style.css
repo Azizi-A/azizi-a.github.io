@@ -38,7 +38,6 @@ p {
     font-family: monospace;
 }
 
-/*--------IMAGE CAROUSEL--------*/
 /* carousel settings */
 .carousel-wrapper {
     overflow: hidden;
@@ -69,10 +68,10 @@ p {
     z-index: 800;
 }
 .carousel_photo.prev {
-    transform: translateX(-100%); /* 'prev' item on the left*/
+    transform: translateX(-100%); /* prev item on the left*/
 }
 .carousel_photo.next {
-    transform: translateX(100%); /* 'next' item on the right*/
+    transform: translateX(100%); /* prev item on the right*/
 }
 
 /* carousel button settings */

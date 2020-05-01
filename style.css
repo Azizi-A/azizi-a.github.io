@@ -2,6 +2,20 @@ body {
     background-color: rgb(19, 60, 73);
 }
 
+h1 {
+    font-family: Calibri;
+    color: linen;
+}
+h2 {
+    font-family: Calibri;
+    color: linen;
+}
+p {
+    font-family: Calibri;
+    color: white;
+}
+
+
 /* banner settings */
 #links-banner {
     display: flex;
@@ -24,26 +38,14 @@ body {
     max-height: 60px;
 }
 
-h1 {
-    font-family: Calibri;
-    color: linen;
-}
-h2 {
-    font-family: Calibri;
-    color: linen;
-}
-p {
-    font-family: Calibri;
-    color: black;
-    font-family: monospace;
-}
 
 /*--------IMAGE CAROUSEL--------*/
 /* carousel settings */
 .carousel-wrapper {
     overflow: hidden;
-    width: 90%;
+    width: 100%;
     box-sizing: border-box;
+    background-color: rgb(3, 38, 49);
 }
 .carousel {
     transform-style: preserve-3d;
@@ -54,7 +56,6 @@ p {
     top: 0;
     width: 100%;
     margin: auto;
-    padding: 1rem 4rem;
     z-index: 100;
     transition: transform .3s, opacity .3s, z-index .3s;
 }
@@ -81,13 +82,12 @@ p {
     position: absolute;
     top: 50%;
     width: 3rem;
-    height: 3rem;
-    background-color: #FFF;
+    height: 100%;
+    background-color: black;
+    opacity: 40%;
     transform: translateY(-50%);
-    border-radius: 50%;
     cursor: pointer;
     z-index: 1001; /* infront of everything */
-    border: 2px solid black;
 }
 .carousel_button--prev {
     left: 0;
@@ -100,10 +100,12 @@ p {
     content: " ";
     position: absolute;
     width: 10px;
+    height: 10px;
     top: 50%;
     left: 54%;
-    border-right: 2px solid black;
-    border-bottom: 2px solid black;
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+    opacity: 100%;
     transform: translate(-50%, -50%) rotate(135deg);
 }
 .carousel_button--next::after {

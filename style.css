@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(11, 61, 77);
+    background-color: rgb(11, 61, 77)
 }
 
 h1 {
@@ -66,6 +66,15 @@ p {
     height: auto;
     display: block;
     margin-top: auto;
+}
+
+#text-box-1 {
+    background-color: linen;
+    /* border: 1px dotted red; */
+}
+.text-box-text {
+    margin: 2rem;
+    color: black;
 }
 
 

@@ -21,6 +21,7 @@ h3 {
 }
 p {
     font-family: Calibri;
+    text-align: justify;
     color: linen;
 }
 
@@ -118,6 +119,7 @@ p {
 /*--------IMAGE CAROUSEL--------*/
 #carusel-text {
     margin-left: 2rem;
+    margin-right: 2rem;
 }
 
 /* carousel settings */

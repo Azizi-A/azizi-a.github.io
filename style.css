@@ -29,21 +29,43 @@ p {
     height: 10%;
     width: 99%;
 }
-.banner-box {
+#title-box{
     display: flex; 
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     flex: 0 0 25%;
     background-color: linen;
-    border: 5px solid rgb(11, 61, 77);
+    border: 2px solid rgb(11, 61, 77);
+}
+#double-layer{
+    display: flex;
+    flex-wrap: wrap;
+}
+.banner-box {
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 50%;
+    flex: 0 0 32%;
+    background-color: linen;
+    border: 2px solid rgb(11, 61, 77);
 }
 .banner-img-wrapper {
-    
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-items: center;
+    /* border: 1px dotted red; */
+    /* background-color: linen;  */
 }
 .banner-img {
     max-width: 100%;
     height: auto;
+    display: block;
+    margin-top: auto;
 }
 
 

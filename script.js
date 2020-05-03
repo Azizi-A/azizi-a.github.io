@@ -136,7 +136,7 @@ function startCarousel (carousel) {
         setInitialClasses();
         setEventListeners();
         moving = false;
-        interval = setInterval(tick, 1500);
+        interval = setInterval(tick, 2000);
     }
 
     initCarousel();

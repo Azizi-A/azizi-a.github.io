@@ -4,6 +4,8 @@ function startCarousel (carousel) {
     var totalItems = items.length;
     var slide = 0;
     var moving = true;
+    var interval;
+    var playing = true;
 
     // Set classes
     function setInitialClasses() {
@@ -22,25 +24,35 @@ function startCarousel (carousel) {
 
         next.addEventListener('click', moveNext);
         prev.addEventListener('click', movePrev);
-        pause.addEventListener('click', pauseUnpause);
+        pause.addEventListener('click', pausePlay);
         addEventListener('keydown', (event) => {
             if (event.keyCode === 39) { moveNext(); } 
             else if (event.keyCode === 37) { movePrev(); }
-            else if (event.keyCode === 80) { pauseUnpause; }
+            else if (event.keyCode === 80) { pausePlay(); }
         });
     }
 
-    let time = 9999; //For autoscroll
-    // Automatically looping through pictuers
-    setInterval(moveNext, time)
-
-    // Pause/unpause the autoscroll
-        if (time === 2000) {
-            time = 9999
+    // Automatically looping through pictuers 
+    function tick() {
+        moveNext();
+      }
+  
+      function pausePlay(e) {
+        if (playing) {
+          clearInterval(interval);
+          e.target.innerHTML = 'PLAY'
         } else {
-            time = 2000
+          interval = setInterval(tick, 1500);
+          e.target.innerHTML = 'PAUSE'
         }
-        setInterval(moveNext, time)
+        playing = !playing;
+      }
+  
+      function initCarousel() {
+        setInitialClasses();
+        setEventListeners();
+        moving = false;
+        interval = setInterval(tick, 1500);
     }
     
     // Next picture navigation handler

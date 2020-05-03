@@ -50,7 +50,7 @@ p {
     justify-content: space-between;
     align-items: center;
     flex: 0 0 25%;
-    background-color: rgb(12, 120, 134);
+    background-image: linear-gradient(to bottom right, rgb(15, 99, 110), rgb(3, 89, 116));
     /* border: 1px dotted red; */
 }
 @media (min-width: 1000px) {
@@ -99,7 +99,8 @@ p {
     justify-content: space-between;
     align-items: center;
     flex: 0 0 25%;
-    /* border: 1px dotted red; */
+    background-image: linear-gradient(to bottom right, rgb(230, 218, 205), linen);
+    /* border: 2px solid rgb(223, 214, 205); */
 }
 @media (min-width: 1000px) {
     #layer-2 .banner-box-1,
@@ -108,10 +109,10 @@ p {
     }
   }
 .banner-box-1 {
-    background-color: rgb(250, 240, 230);
+    /* background-color: rgb(250, 240, 230); */
 }
 .banner-box-2 {
-    background-color: rgb(204, 199, 194);
+    /* background-color: rgb(204, 199, 194); */
 }
 .banner-img-wrapper {
     display: flex;

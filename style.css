@@ -60,10 +60,15 @@ p {
         /* border: 3px solid linen; */
     }
   }
-#title-text-box {
-    /* height: 20px;
-    border: 1px dotted red; */
+#title-text {
+    color: rgb(3, 31, 39);
 }
+@media (max-width: 1000px) {
+    #title-text {
+        font-size: xx-large;
+        margin: 1rem;
+    }
+  }
 #double-layer{
     display: flex;
     flex-wrap: wrap;
@@ -99,7 +104,7 @@ p {
     background-color: rgb(250, 240, 230);
 }
 .banner-box-2 {
-    background-color: rgba(250, 240, 230, 0.5);
+    background-color:transparent;
 }
 .banner-img-wrapper {
     display: flex;

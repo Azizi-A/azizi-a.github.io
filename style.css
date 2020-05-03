@@ -6,24 +6,24 @@ body {
 }
 
 h1 {
-    font-family: Calibri, sans-serif;
+    font-family: sans-serif;
     color: black;
     text-align: center;
     margin: -0.2rem;
 }
 h2 {
-    font-family: Calibri, sans-serif;
+    font-family: sans-serif;
     color: linen;
 }
 h3 {
-    font-family: Calibri, sans-serif;
+    font-family: sans-serif;
     color: black;
     text-align: center;
     margin: -0.15rem;
     padding: 0.2rem;
 }
 p {
-    font-family: Calibri, sans-serif;
+    font-family: sans-serif;
     text-align: justify;
     color: linen;
 }

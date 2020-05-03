@@ -14,15 +14,22 @@ function startCarousel (carousel) {
         items[1].classList.add("next");
     }
 
-    // Set event listeners to check if buttons are clicked
+    // Set event listeners to check if buttons are clicked or left/right arrow keys are pressed
     function setEventListeners() {
         var next = carousel.querySelector('.carousel_button--next');
         var prev = carousel.querySelector('.carousel_button--prev');
 
         next.addEventListener('click', moveNext);
         prev.addEventListener('click', movePrev);
+        addEventListener('keydown', (event) => {
+            if (event.keyCode === 39) { moveNext(); } 
+            else if (event.keyCode === 37) { movePrev(); }
+        });
     }
 
+    // Automatically looping through pictuers
+    setInterval(moveNext, 2000)
+    
     // Next picture navigation handler
     function moveNext() {
         // check if moving

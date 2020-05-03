@@ -6,9 +6,10 @@ body {
 }
 
 h1 {
-    margin: -0.1rem;
     font-family: Calibri;
     color: black;
+    text-align: center;
+    margin: -0.2rem;
 }
 h2 {
     font-family: Calibri;
@@ -17,6 +18,7 @@ h2 {
 h3 {
     font-family: Calibri;
     color: black;
+    text-align: center;
     margin: -0.1rem;
 }
 p {
@@ -50,16 +52,28 @@ p {
     align-items: center;
     flex: 0 0 25%;
     background-color: rgb(204, 199, 194);
-    /* border: 2px solid rgb(11, 61, 77); */
-    /* border: 1px dotted red; */
+    /* border: 9px dotted red; */
+}
+@media (min-width: 1000px) {
+    #title-box {
+        flex: 0 0 14%;
+        /* border: 3px solid linen; */
+    }
+  }
+#title-text-box {
+    /* height: 20px;
+    border: 1px dotted red; */
 }
 #double-layer{
     display: flex;
     flex-wrap: wrap;
-    /* flex-direction: column;
-    justify-content: space-evenly; */
     /* border: 1px dotted red; */
 }
+@media (min-width: 1000px) {
+    #double-layer {
+        flex-wrap: nowrap;
+    }
+  }
 #layer-1,
 #layer-2 {
     display: flex;
@@ -67,6 +81,12 @@ p {
     justify-content: space-evenly;
     /* border: 1px dotted red; */
 }
+@media (min-width: 1000px) {
+    #layer-1,
+    #layer-2 {
+        width: 50%;
+    }
+  }
 .banner-box-1,
 .banner-box-2 {
     display: flex; 
@@ -74,7 +94,6 @@ p {
     justify-content: space-between;
     align-items: center;
     flex: 0 0 33.333%;
-    /* border: 2px solid rgb(11, 61, 77); */
 }
 .banner-box-1 {
     background-color: rgb(250, 240, 230);
@@ -89,7 +108,6 @@ p {
     align-items: center;
     justify-items: center;
     /* border: 1px dotted red; */
-    /* background-color: linen;  */
 }
 .banner-img {
     max-width: 100%;
@@ -128,15 +146,10 @@ p {
     width: 100%;
     box-sizing: border-box;
     background-color: rgb(3, 31, 39);
-    border: 3px solid rgb(11, 61, 77);
 }
 @media (min-width: 1000px) {
     .carousel-wrapper {
-        overflow: hidden;
         width: 1000px;
-        box-sizing: border-box;
-        /* background-color: rgb(3, 31, 39);
-        border: 3px solid rgb(11, 61, 77); */
     }
   }
 .carousel {

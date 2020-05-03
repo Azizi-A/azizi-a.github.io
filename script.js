@@ -79,7 +79,7 @@ function startCarousel (carousel) {
             var oldNext = slide + 2;
 
             // If more that three items
-            if ((totalItems - 1) > 3) {
+            if ((totalItems) > 3) {
 
                 // Check if new slides are out of bounds
                 if (newPrevious <= 0) {

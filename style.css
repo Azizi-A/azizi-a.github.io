@@ -19,7 +19,8 @@ h3 {
     font-family: Calibri, sans-serif;
     color: black;
     text-align: center;
-    margin: -0.1rem;
+    margin: -0.15rem;
+    padding: 0.2rem;
 }
 p {
     font-family: Calibri, sans-serif;
@@ -43,8 +44,7 @@ p {
         width: 1000px;
     }
   }
-#title-box,
-#title-box-addendum {
+.title-box {
     display: flex; 
     flex-direction: column;
     justify-content: space-between;
@@ -120,6 +120,9 @@ p {
     padding: 0.5rem;
     align-items: center;
     justify-content: center;
+}
+.title-box .banner-img-wrapper {
+    padding: 0.0rem;
 }
 .banner-img-wrapper a {
     display: flex;

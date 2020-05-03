@@ -18,17 +18,30 @@ function startCarousel (carousel) {
     function setEventListeners() {
         var next = carousel.querySelector('.carousel_button--next');
         var prev = carousel.querySelector('.carousel_button--prev');
+        var pause = carousel.querySelector('.carousel_button--pause');
 
         next.addEventListener('click', moveNext);
         prev.addEventListener('click', movePrev);
+        pause.addEventListener('click', pauseUnpause);
         addEventListener('keydown', (event) => {
             if (event.keyCode === 39) { moveNext(); } 
             else if (event.keyCode === 37) { movePrev(); }
+            else if (event.keyCode === 80) { pauseUnpause; }
         });
     }
 
+    let time = 9999; //For autoscroll
     // Automatically looping through pictuers
-    setInterval(moveNext, 2000)
+    setInterval(moveNext, time)
+
+    // Pause/unpause the autoscroll
+        if (time === 2000) {
+            time = 9999
+        } else {
+            time = 2000
+        }
+        setInterval(moveNext, time)
+    }
     
     // Next picture navigation handler
     function moveNext() {

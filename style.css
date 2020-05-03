@@ -204,7 +204,8 @@ p {
 
 /* carousel button settings */
 .carousel_button--prev,
-.carousel_button--next {
+.carousel_button--next,
+.carousel_button--pause {
     position: absolute;
     top: 50%;
     width: 4rem;
@@ -221,8 +222,19 @@ p {
 .carousel_button--next {
     right: 0;
 }
+.carousel_button--pause {
+    top: unset;
+    bottom: 5%;
+    left: 50%;
+    height: 3rem;
+    width: 3rem;
+    transform: translateY(0%);
+    border-radius: 50%;
+    border: 2px solid white;
+}
 .carousel_button--prev::after,
-.carousel_button--next::after {
+.carousel_button--next::after,
+.carousel_button--pause::after {
     content: " ";
     position: absolute;
     width: 15px;
@@ -236,4 +248,11 @@ p {
 .carousel_button--next::after {
     left: 47%;
     transform: translate(-50%, -50%) rotate(-45deg);
+}
+.carousel_button--pause::after {
+    width: 5px;
+    border-left: 4px solid white;
+    border-right: 4px solid white;
+    border-bottom: none;
+    transform: translate(-60%, -50%);
 }

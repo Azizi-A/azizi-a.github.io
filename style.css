@@ -6,23 +6,23 @@ body {
 }
 
 h1 {
-    font-family: Calibri, 'Trebuchet MS', sans-serif;
+    font-family: Calibri, sans-serif;
     color: black;
     text-align: center;
     margin: -0.2rem;
 }
 h2 {
-    font-family: Calibri, 'Trebuchet MS', sans-serif;
+    font-family: Calibri, sans-serif;
     color: linen;
 }
 h3 {
-    font-family: Calibri, 'Trebuchet MS', sans-serif;
+    font-family: Calibri, sans-serif;
     color: black;
     text-align: center;
     margin: -0.1rem;
 }
 p {
-    font-family: Calibri, 'Trebuchet MS', sans-serif;
+    font-family: Calibri, sans-serif;
     text-align: justify;
     color: linen;
 }

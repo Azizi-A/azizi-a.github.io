@@ -110,9 +110,14 @@ p {
     display: flex;
     width: 100%;
     height: 100%;
+    padding: 0.5rem;
     align-items: center;
-    justify-items: center;
-    /* border: 1px dotted red; */
+    justify-content: center;
+}
+.banner-img-wrapper a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .banner-img {
     max-width: 100%;

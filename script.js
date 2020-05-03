@@ -35,24 +35,14 @@ function startCarousel (carousel) {
     // Automatically looping through pictuers 
     function tick() {
         moveNext();
-      }
-  
-      function pausePlay(e) {
+    }  
+    function pausePlay() {
         if (playing) {
-          clearInterval(interval);
-          e.target.innerHTML = 'PLAY'
+            clearInterval(interval);
         } else {
-          interval = setInterval(tick, 1500);
-          e.target.innerHTML = 'PAUSE'
+            interval = setInterval(tick, 2000);
         }
         playing = !playing;
-      }
-  
-      function initCarousel() {
-        setInitialClasses();
-        setEventListeners();
-        moving = false;
-        interval = setInterval(tick, 1500);
     }
     
     // Next picture navigation handler
@@ -146,6 +136,7 @@ function startCarousel (carousel) {
         setInitialClasses();
         setEventListeners();
         moving = false;
+        interval = setInterval(tick, 1500);
     }
 
     initCarousel();

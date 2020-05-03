@@ -60,11 +60,11 @@ p {
   }
 .title-text {
     color: linen;
+    margin: 0.3rem;
 }
 @media (max-width: 1000px) {
     .title-text {
         font-size: x-large;
-        margin: 0.2rem;
     }
   }
 #double-layer{

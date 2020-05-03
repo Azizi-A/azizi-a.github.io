@@ -226,6 +226,9 @@ p {
     top: unset;
     bottom: 5%;
     left: 50%;
+    margin: 0 auto; 
+    Left: 0;
+    right: 0;
     height: 3rem;
     width: 3rem;
     transform: translateY(0%);

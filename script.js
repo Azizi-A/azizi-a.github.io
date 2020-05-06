@@ -35,7 +35,8 @@ function startCarousel (carousel) {
     // Automatically looping through pictuers 
     function tick() {
         moveNext();
-    }  
+    }
+    // Stop/start autoplay  
     function pausePlay() {
         if (playing) {
             clearInterval(interval);

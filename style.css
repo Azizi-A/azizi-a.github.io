@@ -216,6 +216,11 @@ p {
     cursor: pointer;
     z-index: 1001; /* infront of everything */
 }
+.carousel_button--prev:hover,
+.carousel_button--next:hover,
+.carousel_button--pause:hover {
+    opacity: 100%;
+}
 .carousel_button--prev {
     left: 0;
 }

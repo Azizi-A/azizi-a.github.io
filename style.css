@@ -107,12 +107,6 @@ p {
     #layer-2 .banner-box-2 {
         flex: 0 0 33.33%;
     }
-  }
-.banner-box-1 {
-    /* background-color: rgb(250, 240, 230); */
-}
-.banner-box-2 {
-    /* background-color: rgb(204, 199, 194); */
 }
 .banner-img-wrapper {
     display: flex;
@@ -205,7 +199,8 @@ p {
 /* carousel button settings */
 .carousel_button--prev,
 .carousel_button--next,
-.carousel_button--pause {
+.carousel_button--pause,
+.carousel_button--play {
     position: absolute;
     top: 50%;
     width: 4rem;
@@ -218,7 +213,8 @@ p {
 }
 .carousel_button--prev:hover,
 .carousel_button--next:hover,
-.carousel_button--pause:hover {
+.carousel_button--pause:hover,
+.carousel_button--play:hover {
     opacity: 70%;
 }
 .carousel_button--prev {
@@ -227,7 +223,8 @@ p {
 .carousel_button--next {
     right: 0;
 }
-.carousel_button--pause {
+.carousel_button--pause,
+.carousel_button--play {
     top: unset;
     bottom: 5%;
     left: 50%;
@@ -239,10 +236,15 @@ p {
     transform: translateY(0%);
     border-radius: 50%;
     border: 2px solid white;
+    visibility: hidden
+}
+.carousel_button--pause {
+    visibility: visible
 }
 .carousel_button--prev::after,
 .carousel_button--next::after,
-.carousel_button--pause::after {
+.carousel_button--pause::after,
+.carousel_button--play::after {
     content: " ";
     position: absolute;
     width: 15px;
@@ -263,4 +265,10 @@ p {
     border-right: 4px solid white;
     border-bottom: none;
     transform: translate(-60%, -50%);
+}
+.carousel_button--play::after {
+    border-right: none;
+    border-bottom: none;
+    background: linear-gradient(-45deg, black 10px, white 11px);
+    transform: translate(-75%, -50%) rotate(135deg);
 }

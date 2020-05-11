@@ -92,8 +92,7 @@ p {
         width: 42.86%;
     }
   }
-.banner-box-1,
-.banner-box-2 {
+.banner-box {
     display: flex; 
     flex-direction: column;
     justify-content: space-between;
@@ -103,14 +102,13 @@ p {
     /* border: 2px solid rgb(223, 214, 205); */
 }
 @media (min-width: 1000px) {
-    #layer-2 .banner-box-1,
-    #layer-2 .banner-box-2 {
+    #layer-2 .banner-box {
         flex: 0 0 33.33%;
     }
 }
 .banner-img-wrapper {
     display: flex;
-    width: 100%;
+    width: 50%;
     height: 100%;
     padding: 0.5rem;
     align-items: center;

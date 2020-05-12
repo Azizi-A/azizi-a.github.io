@@ -106,12 +106,12 @@ p {
 }
 .banner-text {
     position: absolute;
-    top: 0;
-    color: linen;
+    bottom: 0;
+    color: white;
     mix-blend-mode: difference;
     transition: transform .5s, opacity .5s;
     opacity: 0;
-    transform: translateY(-100%);
+    transform: translateY(100%);
 }
 .banner-img-wrapper:hover .banner-text{
     opacity: 1;
@@ -142,9 +142,6 @@ p {
     display: none;
 }
 @media (max-width: 1000px) {
-    /* .title-text {
-        font-size: x-large;
-    } */
     #first-name {
         display: initial;
     }
@@ -152,6 +149,10 @@ p {
         display: none;
     }
   }
+#me {
+    color: black;
+    mix-blend-mode: unset;
+}
 
 
 /*--------TEXT BOX--------*/

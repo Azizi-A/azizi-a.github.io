@@ -106,11 +106,9 @@ p {
 }
 .banner-text {
     position: absolute;
-    bottom: 1rem;
-    color: black;
-    background-color: rgba(250, 240, 230, 0.5);
-    box-shadow: 0px 0px 10px rgba(255, 240, 230, 1);
-    /* text-shadow: 1px 1px 10px linen, -1px 1px 10px linen, 1px -1px 10px linen, -1px -1px 10px linen; */
+    bottom: .5rem;
+    color: linen;
+    mix-blend-mode: difference;
     transition: transform .5s, opacity .5s;
     opacity: 0;
     transform: translateY(-100%);
@@ -138,16 +136,15 @@ p {
 .title-text {
     position: absolute;
     top: 0;
-    color: rgb(1, 35, 46);
-    text-shadow: 1px 1px rgb(255, 230, 0), -1px 1px rgb(255, 230, 0), 1px -1px rgb(255, 230, 0), -1px -1px rgb(255, 230, 0);
+    color: rgb(5, 52, 68);
 }
 #first-name {
     display: none;
 }
 @media (max-width: 1000px) {
-    .title-text {
+    /* .title-text {
         font-size: x-large;
-    }
+    } */
     #first-name {
         display: initial;
     }

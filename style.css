@@ -106,7 +106,7 @@ p {
 }
 .banner-text {
     position: absolute;
-    bottom: .5rem;
+    top: 0;
     color: linen;
     mix-blend-mode: difference;
     transition: transform .5s, opacity .5s;

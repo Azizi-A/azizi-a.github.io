@@ -137,11 +137,21 @@ p {
     position: absolute;
     top: 0;
     color: rgb(1, 35, 46);
-    /* margin: 0.3rem; */
+    text-shadow: 1px 1px 6px rgb(255, 230, 0), -1px 1px 6px rgb(255, 230, 0), 1px -1px 6px rgb(255, 230, 0), -1px -1px 6px rgb(255, 230, 0);
+
+}
+#first-name {
+    display: none;
 }
 @media (max-width: 1000px) {
     .title-text {
         font-size: x-large;
+    }
+    #first-name {
+        display: initial;
+    }
+    #full-name {
+        display: none;
     }
   }
 

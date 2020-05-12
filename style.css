@@ -229,6 +229,11 @@ p {
     padding: 0 1rem;
     background-color: rgba(0, 0, 0, 0.7);
 }
+@media (max-width: 1000px) {
+    .carousel_photo_text {
+        visibility: hidden;
+    }
+  }
 
 /* carousel button settings */
 .carousel_button--prev,

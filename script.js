@@ -6,8 +6,8 @@ function startCarousel (carousel) {
     var moving = true;
     var interval;
     var playing = true;
-    var pauseButton = document.getElementsByClassName("carousel_button--pause")
-    var playButton = document.getElementsByClassName("carousel_button--play")
+    var pauseButton = carousel.querySelector('.carousel_button--pause')
+    var playButton = carousel.querySelector('.carousel_button--play')
 
     // Set classes
     function setInitialClasses() {
@@ -44,11 +44,11 @@ function startCarousel (carousel) {
     function pausePlay() {
         if (playing) {
             clearInterval(interval);
-            pauseButton[0].style.visibility = 'hidden';
-            playButton[0].style.visibility = 'visible';
+            pauseButton.style.visibility = 'hidden';
+            playButton.style.visibility = 'visible';
         } else {
-            pauseButton[0].style.visibility = 'visible';
-            playButton[0].style.visibility = 'hidden';
+            pauseButton.style.visibility = 'visible';
+            playButton.style.visibility = 'hidden';
             interval = setInterval(tick, 2000);
         }
         playing = !playing;

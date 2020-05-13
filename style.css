@@ -48,7 +48,7 @@ p {
     flex-wrap: wrap;
     /* border: 1px dotted red; */
 }
-@media (min-width: 600px) {
+@media (min-width: 700px) {
     #double-layer {
         flex-wrap: nowrap;
     }
@@ -60,7 +60,7 @@ p {
     justify-content: space-evenly;
     /* border: 1px dotted red; */
 }
-@media (min-width: 600px) {
+@media (min-width: 700px) {
     #layer-1 {
         width: 57.14%;
     }
@@ -76,7 +76,7 @@ p {
     flex: 0 0 25%;
     background-image: linear-gradient(to bottom right, rgb(230, 218, 205), linen);
 }
-@media (min-width: 600px) {
+@media (min-width: 700px) {
     #layer-2 .banner-box {
         flex: 0 0 33.33%;
     }
@@ -106,7 +106,7 @@ p {
 }
 .banner-text {
     position: absolute;
-    bottom: -3rem;
+    top: 100%;
     color: white;
     mix-blend-mode: difference;
     transition: transform .5s, opacity .5s;
@@ -128,7 +128,7 @@ p {
     flex: 0 0 25%;
     background-image: linear-gradient(to right, rgb(1, 35, 46), rgb(18, 112, 124));
 }
-@media (min-width: 600px) {
+@media (min-width: 700px) {
     #title-box-addendum {
         display: none;
     }
@@ -150,8 +150,9 @@ p {
     }
   }
 .bonus-text {
+    top: unset;
     bottom: 0rem;
-    color: black;
+    color: rgb(255, 238, 88);
     mix-blend-mode: unset;
     font-size: x-large;
     transform: translateY(100%);

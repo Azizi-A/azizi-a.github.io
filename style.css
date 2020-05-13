@@ -106,12 +106,12 @@ p {
 }
 .banner-text {
     position: absolute;
-    bottom: 0;
+    bottom: -3rem;
     color: white;
     mix-blend-mode: difference;
     transition: transform .5s, opacity .5s;
     opacity: 0;
-    transform: translateY(100%);
+    transform: translateY(-100%);
 }
 .banner-img-wrapper:hover .banner-text{
     opacity: 1;
@@ -150,9 +150,11 @@ p {
     }
   }
 .bonus-text {
+    bottom: 0.5rem;
     color: black;
     mix-blend-mode: unset;
     font-size: x-large;
+    transform: translateY(100%);
 }
 
 
@@ -229,7 +231,7 @@ p {
     padding: 0 1rem;
     background-color: rgba(0, 0, 0, 0.7);
 }
-@media (max-width: 1000px) {
+@media (max-width: 800px) {
     .carousel_photo-text {
         visibility: hidden;
     }

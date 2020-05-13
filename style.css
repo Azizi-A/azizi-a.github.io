@@ -150,7 +150,7 @@ p {
     }
   }
 .bonus-text {
-    bottom: 0.5rem;
+    bottom: 0rem;
     color: black;
     mix-blend-mode: unset;
     font-size: x-large;

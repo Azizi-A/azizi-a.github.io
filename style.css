@@ -193,11 +193,11 @@ p {
 .carousel {
     transform-style: preserve-3d;
 }
-.carousel_img{
+.carousel_photo {
     width: 100%;
 
 }
-.carousel_photo {
+.carousel_photo-wrapper {
     opacity: 0;
     position: absolute;
     top: 0;
@@ -206,23 +206,23 @@ p {
     z-index: 100;
     transition: transform .3s, opacity .3s, z-index .3s;
 }
-.carousel_photo.initial,
-.carousel_photo.active {
+.carousel_photo-wrapper.initial,
+.carousel_photo-wrapper.active {
     opacity: 1;
     position: relative;
     z-index: 900;
 }
-.carousel_photo.prev,
-.carousel_photo.next {
+.carousel_photo-wrapper.prev,
+.carousel_photo-wrapper.next {
     z-index: 800;
 }
-.carousel_photo.prev {
+.carousel_photo-wrapper.prev {
     transform: translateX(-100%); /* 'prev' item on the left*/
 }
-.carousel_photo.next {
+.carousel_photo-wrapper.next {
     transform: translateX(100%); /* 'next' item on the right*/
 }
-.carousel_photo_text {
+.carousel_photo-text {
     position: absolute;
     bottom: 1rem;
     right: 4.5rem;
@@ -230,7 +230,7 @@ p {
     background-color: rgba(0, 0, 0, 0.7);
 }
 @media (max-width: 1000px) {
-    .carousel_photo_text {
+    .carousel_photo-text {
         visibility: hidden;
     }
   }

@@ -1,5 +1,5 @@
 function startCarousel (carousel) {
-    var itemClassName = "carousel_photo";
+    var itemClassName = "carousel_photo-wrapper";
     var items = carousel.querySelectorAll('.' + itemClassName);
     var totalItems = items.length;
     var slide = 0;

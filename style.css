@@ -104,15 +104,15 @@ p {
 .banner-text {
     position: absolute;
     top: 100%;
-    color: white;
+    color: linen;
     mix-blend-mode: difference;
     transition: transform .5s, opacity .5s;
     opacity: 0;
     transform: translateY(-100%);
 }
-@media (max-width: 768px) {
+@media (min-width: 768px) {
     .banner-text {
-        color: linen;
+        color: white;
     }
   }
 .banner-img-wrapper:hover .banner-text{
@@ -160,7 +160,7 @@ p {
     transform: translateY(100%);
 }
 /* adjust all banner text to appear without hover on smaller screens */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .banner-text {
         transition: transform 0s, opacity 0s;
         opacity: 1;

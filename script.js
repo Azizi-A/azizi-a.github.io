@@ -36,7 +36,7 @@ function startCarousel (carousel) {
         });
     }
 
-    // Automatically looping through pictuers 
+    // Automatically looping through pictuers because of setInterval 
     function tick() {
         moveNext();
     }

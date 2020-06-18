@@ -5,21 +5,16 @@ body {
     align-items: center;
 }
 
-h1 {
-    font-family: sans-serif;
-    color: black;
-    text-align: center;
-    margin: -0.2rem;
-}
-h2 {
-    font-family: sans-serif;
-    color: linen;
-}
+h1,
 h3 {
     font-family: sans-serif;
     text-align: center;
     margin: -0.15rem;
     padding: 0.2rem;
+}
+h2 {
+    font-family: sans-serif;
+    color: linen;
 }
 p {
     font-family: sans-serif;
@@ -135,6 +130,7 @@ p {
     }
   }
 .title-text {
+    font-size: large;
     position: absolute;
     top: 0;
     color: rgb(5, 52, 68);

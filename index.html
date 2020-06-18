@@ -4,18 +4,16 @@
     <!-- metadata elements -->
     <title>Azizi Adeyemo</title>
     <link rel="stylesheet" href="./style.css">
-  </head>
-  <body>
-    <!-- page contents -->
 
-    <div id="links-banner">
+    <!-- header banner -->
+    <nav id="links-banner">
         <div id="double-layer">
 
             <div id="layer-1">
                 <div class="title-box" id="title-box">
                     <div class="banner-img-wrapper">
-                        <h3 class="title-text" id="full-name">Azizi Adeyemo</h3>
-                        <h3 class="title-text" class="banner-text" id="first-name"> Azizi </h3>
+                        <h1 class="title-text" id="full-name">Azizi Adeyemo</h1>
+                        <h1 class="title-text" class="banner-text" id="first-name"> Azizi </h1>
                         <img class="banner-img" src = "imgs-and-docs/IMG_20191101_114843360-COLLAGE - 2.jpg" alt = "Picture of me">
                         <h3 class="banner-text bonus-text">Me!</h3>
                     </div>            
@@ -43,7 +41,7 @@
             <div id="layer-2">
                 <div class="title-box" id="title-box-addendum">
                     <div class="banner-img-wrapper">
-                        <h3 class="title-text" id="last-name">Adeyemo</h3>
+                        <h1 class="title-text" id="last-name">Adeyemo</h1>
                         <img class="banner-img" src = "imgs-and-docs/IMG_20191101_114843360-COLLAGE - 3.jpg" alt = "Picture of me">
                         <h3 class="banner-text bonus-text">Me again!</h3>
                     </div>
@@ -69,16 +67,18 @@
             </div>
 
         </div>
-    </div>
-
-    <div class="carousel-wrapper">
+    </nav>
+  </head>
+  <body>
+    <!-- page contents -->
+    <section class="carousel-wrapper">
         <div id="carusel-text">
             <h2>Who I Am</h2>
             <p>I'm an ex physics teacher excited about science, technology and people. I have a knack for problem solving 
                 and enjoy working and spending time with geeks of all varieties.</p>
         </div>
 
-        <div class="carousel" id="carousel1">
+        <section class="carousel" id="carousel1">
 
             <div class = "carousel_photo-wrapper initial">
                 <img class = "carousel_photo" src="imgs-and-docs/Me/2.jpg" alt="#">
@@ -102,10 +102,10 @@
             <div class="carousel_button--pause"></div>
             <div class="carousel_button--play"></div>
             
-        </div>
-    </div>
+        </section>
+    </section>
 
-    <div id="text-box-1">
+    <article id="text-box-1">
         <h2 class="text-box-text">Why I'd Like to be a Part of Founders and Coders</h2>
         <p class="text-box-text"> I was a secondary science teacher for four years. Kids are great but exhausting, 
             so I knew I’d have to do something else. I’ve always had a passion for tech and problem solving and 
@@ -116,19 +116,19 @@
             and understand the value of helping people achieve. The opportunity to learn in an environment where 
             that's appreciated is one I’d be grateful to have. Having the chance to help others learn the same skills 
             afterwards would be even better.</p>
-    </div>
+    </article>
  
-    <div class="carousel-wrapper">
+    <section class="carousel-wrapper">
         <div id="carusel-text">
             <h2>A Few Pictuers From Traveling</h2>
             <p>In the last year I've been lucky enough to go traveleing in Asia. These are a few of the pictures I took.</p>
         </div>
 
-        <div class="carousel" id="carousel2">
+        <section class="carousel" id="carousel2">
 
             <div class="carousel_photo-wrapper">
                 <img class = "carousel_photo initial" src="imgs-and-docs/Travel/1.jpg" alt="#">
-                <div class="carousel_photo-text"><p>Ryuzu Falls, Japan</p></div>
+                <section class="carousel_photo-text"><p>Ryuzu Falls, Japan</p></section>
             </div>
             <div class="carousel_photo-wrapper">
                 <img class = "carousel_photo" src="imgs-and-docs/Travel/2.jpg" alt="#">
@@ -176,8 +176,8 @@
             <div class="carousel_button--pause"></div>
             <div class="carousel_button--play"></div>
             
-        </div>
-    </div>
+        </section>
+    </section>
 
   </body>
   <script type='text/javascript' src="./script.js"></script>

@@ -324,3 +324,37 @@ p {
     background: linear-gradient(-45deg, black 10px, white 11px);
     transform: translate(-75%, -50%) rotate(135deg);
 }
+
+/*----- Footer -----*/
+#padding {
+    height: 40px;
+    background-color: rgb(1, 22, 29);
+}
+@media only screen and (min-width: 1000px) {
+    #padding {
+        height: 16px;
+        width: 1000px;
+    }
+  }
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(3, 31, 39);
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    background-image: linear-gradient(to bottom, rgb(1, 35, 46), rgb(15, 63, 70));
+}
+.footer-text {
+    font-size: x-small;
+    text-decoration: underline;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0.5rem;
+    width: 90%;
+    height: 100%;
+    color: rgb(230, 218, 205);
+}

@@ -332,29 +332,35 @@ p {
 }
 @media only screen and (min-width: 1000px) {
     #padding {
-        height: 16px;
+        height: 25px;
         width: 1000px;
     }
   }
 
-.footer {
+footer nav {
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: rgb(3, 31, 39);
     display: grid;
     grid-template-columns: repeat(6, 1fr);
+    padding: 0.5rem;
     background-image: linear-gradient(to bottom, rgb(1, 35, 46), rgb(15, 63, 70));
 }
 .footer-text {
     font-size: x-small;
-    text-decoration: underline;
+    /* text-decoration: underline; */
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding: 0.5rem;
     width: 90%;
     height: 100%;
+}
+footer a {
+    text-decoration: none;
     color: rgb(230, 218, 205);
 }
+footer a:link {color: rgb(230, 218, 205);}
+footer a:active {color: white;}
+footer a:hover {color: rgb(255, 238, 88);}
+footer a:visited {color: rgb(151, 144, 135);}

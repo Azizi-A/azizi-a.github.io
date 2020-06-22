@@ -361,6 +361,6 @@ footer a {
     color: rgb(230, 218, 205);
 }
 footer a:link {color: rgb(230, 218, 205);}
-footer a:active {color: white;}
-footer a:hover {color: rgb(255, 238, 88);}
 footer a:visited {color: rgb(151, 144, 135);}
+footer a:hover {color: rgb(255, 238, 88);}
+footer a:active {color: white;}
